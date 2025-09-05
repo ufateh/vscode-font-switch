@@ -1,8 +1,8 @@
 # Font Switch
 
-![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/ufateh.vscode-font-switch?style=for-the-badge&color=%2341BC13)
-![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/d/ufateh.vscode-font-switch?style=for-the-badge)
-![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/stars/ufateh.vscode-font-switch?style=for-the-badge)
+![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/FatehUllah.vscode-font-switch?style=for-the-badge&color=%2341BC13)
+![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/d/FatehUllah.vscode-font-switch?style=for-the-badge)
+![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/stars/FatehUllah.vscode-font-switch?style=for-the-badge)
 
 Switch your VS Code editor font family with live preview and easy management.
 
