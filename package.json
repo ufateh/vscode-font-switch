@@ -2,7 +2,7 @@
   "name": "vscode-font-switch",
   "displayName": "Font Switch",
   "description": "Switch editor font family with live preview",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "publisher": "ufateh",
   "license": "MIT",
   "bugs": {
@@ -45,7 +45,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.7",
     "@types/node": "^20.14.10",
-    "@types/vscode": "^1.90.0",
+    "@types/vscode": "^1.74.0",
     "mocha": "^10.7.0",
     "typescript": "^5.5.4"
   }
