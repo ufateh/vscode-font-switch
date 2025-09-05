@@ -3,7 +3,7 @@
   "displayName": "Font Switch",
   "description": "Switch editor font family with live preview",
   "version": "1.0.0",
-  "publisher": "ufateh",
+  "publisher": "FatehUllah",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ufateh/vscode-font-switch/issues"
