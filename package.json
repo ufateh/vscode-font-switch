@@ -2,7 +2,7 @@
   "name": "vscode-font-switch",
   "displayName": "Font Switch",
   "description": "Switch editor font family with live preview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "FatehUllah",
   "license": "MIT",
   "bugs": {
