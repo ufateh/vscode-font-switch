@@ -1,27 +1,28 @@
 {
-  "name": "terminal-zoom",
-  "displayName": "Terminal Zoom",
-  "description": "Control font-size of terminal",
-  "version": "2.0.3",
-  "publisher": "trybick",
+  "name": "vscode-font-switch",
+  "displayName": "Font Switch",
+  "description": "Switch editor font family with live preview",
+  "version": "2.0.0",
+  "publisher": "ufateh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/trybick/vscode-terminal-zoom/issues"
+    "url": "https://github.com/ufateh/vscode-font-switch/issues"
   },
-  "homepage": "https://github.com/trybick/vscode-terminal-zoom",
+  "homepage": "https://github.com/ufateh/vscode-font-switch",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trybick/vscode-terminal-zoom.git"
+    "url": "https://github.com/ufateh/vscode-font-switch.git"
   },
   "icon": "images/logo.png",
   "keywords": [
-    "terminal",
-    "zoom",
-    "font size",
-    "status bar"
+    "editor",
+    "font",
+    "font family",
+    "typography",
+    "theme"
   ],
   "engines": {
-    "vscode": "^1.40.0"
+    "vscode": "^1.74.0"
   },
   "activationEvents": [
     "onStartupFinished"
@@ -30,16 +31,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "terminalFontSize.decrease",
-        "title": "Terminal Zoom: Decrease terminal font size"
-      },
-      {
-        "command": "terminalFontSize.increase",
-        "title": "Terminal Zoom: Increase terminal font size"
-      },
-      {
-        "command": "terminalFontSize.openQuickPick",
-        "title": "Terminal Zoom: Set terminal font size"
+        "command": "editorFont.set",
+        "title": "Font Switch: Set editor font"
       }
     ]
   },
@@ -50,14 +43,10 @@
     "pretest": "npm run compile"
   },
   "devDependencies": {
-    "@types/glob": "^7.1.1",
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^12.11.7",
-    "@types/vscode": "^1.40.0",
-    "glob": "^7.1.5",
-    "mocha": "^6.2.2",
-    "typescript": "^3.6.4",
-    "tslint": "^5.20.0",
-    "vscode-test": "^1.2.2"
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^20.14.10",
+    "@types/vscode": "^1.90.0",
+    "mocha": "^10.7.0",
+    "typescript": "^5.5.4"
   }
 }

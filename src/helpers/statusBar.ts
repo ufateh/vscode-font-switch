@@ -1,50 +1,8 @@
-import { StatusBarAlignment, StatusBarItem, window, workspace } from 'vscode';
-import { cmds, IStatusBarItem, strings, tooltips } from './constants';
+import { workspace } from 'vscode';
+import { strings } from './constants';
 
-export function getCurrentSize(): number {
+export function getCurrentFont(): string {
   const config = workspace.getConfiguration();
-  return config.get<number>(strings.terminalFontSize) || 12;
-}
-
-function _createStatusBarItem({ text, tooltip, command }: IStatusBarItem): StatusBarItem {
-  const item = window.createStatusBarItem(StatusBarAlignment.Right);
-  item.text = text;
-  item.tooltip = tooltip;
-  item.command = command;
-
-  return item;
-}
-
-export const statusBarItems = [
-  _createStatusBarItem({
-    text: '+',
-    tooltip: tooltips.increase,
-    command: cmds.increaseSize,
-  }),
-  _createStatusBarItem({
-    text: `Terminal ${getCurrentSize()}-pt`,
-    tooltip: tooltips.set,
-    command: cmds.setSize,
-  }),
-  _createStatusBarItem({
-    text: '-',
-    tooltip: tooltips.decrease,
-    command: cmds.decreaseSize,
-  }),
-];
-
-export function updateStatusBar() {
-  statusBarItems[1].text = `Terminal ${getCurrentSize()}-pt`;
-}
-
-export function showStatusBarItems() {
-  statusBarItems.forEach((item) => item.show());
-}
-
-export function hideStatusBarItems() {
-  statusBarItems.forEach((item) => item.hide());
-}
-
-export function disposeStatusBarItems() {
-  statusBarItems.forEach((item) => item.dispose());
+  const current = config.get<string>(strings.editorFontFamily) || 'Consolas';
+  return current.split(',')[0].trim();
 }
